@@ -3,166 +3,339 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foody</title>
+    <title>Foody — Le plaisir en un clic</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
 
-    <header>
-        <!-- Bouton hamburger -->
-        <button class="menu-toggle" id="menu-toggle" onclick="mobile()">
+    <header class="topbar">
+        <a href="#accueil" class="logo"><span>F</span>oody.</a>
+        <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <nav id="nav" class="nav">
-            <h1><span>F</span>OODY</h1>
-            <ul>
-                <a href="index.html"><li>Accueil</li></a>
-                <a href="apropos.html"><li>A propos</li></a>
-                <a href="menu.html"><li>Menu</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-                <button>S'inscrire</button>
-            </ul>
+        <nav class="navigation" aria-label="Navigation principale">
+            <a class="active" href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="actions">
+            <button class="icon-button" aria-label="Rechercher">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a class="order-link" href="commande.html">
+                Commander 
+            </a>
+       </div>
     </header>
 
-    <section class="index" id="index" >
-        <div class="info">
-            <h2>FOODY</h2>
-            <h3>Le goût, la fraîcheur et le plaisir réunis !</h3>
-            <p>
-                Découvrez nos délicieux burgers, pizzas,sandwichs,<br> poulets et frites,
-                préparés avec soin pour satisfaire toutes vos envies.<br>
-                Commandez maintenant et régalez-vous !
-            </p>
-            <a href="menu.html">Voir les plats</a>
-        </div>
-    </section>
-    
-    <section class="a-propos">
-        <h2>A propos de nous</h2>
-        <div class="apropos"> 
-            <div class="left">
-                <img src="images/propos.jpg" alt="a propos" width="70%">
-            </div>
-            <div class="right">
-                <p class="desc">
-                    Bienvenue chez <span>Foody</span>, votre destination gourmande où saveurs, qualité et convivialité se rencontrent.
-                    Nous vous proposons une cuisine savoureuse préparée avec des ingrédients soigneusement sélectionnés,
-                    dans le but de vous offrir une expérience unique à chaque repas.<br><br>
-                    Que vous souhaitiez déjeuner, dîner, commander à emporter ou partager un bon moment en famille ou entre amis,
-                    <span>Foody</span> est là pour satisfaire toutes vos envies.<br>
-                    Notre mission est simple : <span>vous servir des plats délicieux, frais et accessibles, dans une ambiance chaleureuse et accueillante.</span>
-                    <br><br>Chez Foody, chaque plat est préparé avec passion pour transformer chaque repas en un véritable moment de plaisir.
+    <main>
+        <section class="hero" id="accueil">
+            <div class="hero-copy">
+                <p class="intro">
+                    Préparé avec amour, servi chaud
                 </p>
-                <a href="apropos.html">Savoir plus</a>
-            </div>
-        </div>
-    </section>
+                <h1>Le goût qui rend <em>heureux.</em></h1>
+                <p class="desc">
+                    Des recettes généreuses, des ingrédients frais et tout le plaisir de votre fast-food préféré, livré chez vous.
+                </p>
+                <div class="hero-buttons">
+                    <a class="button button-primary" href="menu.html">
+                        Voir le menu 
+                    </a>
+                    <a class="button button-second" href="apropos.html">
+                        <i class="fa-solid fa-play"></i>
+                        Découvrir Foody
+                    </a>
+                </div>
 
-    <section id="menu" class="menu">
-        <h2>Nos spécialitées</h2>
-        <p>Les plus populaires</p>
-        <div class="cards">
-            <div class="card">
-                <img src="images/tacos.jpg" alt="" width="100px">
-                <h3>Tacos</h3>
-                <div class="icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+                <div class="social-avis">
+                    <div class="avatars">
+                        <span>AMI</span>
+                        <span>MK</span>
+                        <span>AM</span>
+                    </div>
+                    <div>
+                        <strong>+2 500 gourmands</strong>
+                        <small>
+                            <i class="fa-solid fa-star"></i>
+                             4,9/5 d'après nos clients
+                        </small>
+                    </div>
                 </div>
-                <p class="prix"> 2.500 FCFA</p>
             </div>
-            <div class="card">
-                <img src="images/crevette.jpg" alt="" width="100px">
-                <h3>Crevette</h3>
-                <div class="icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
+            
+            <div class="hero-visual">
+                <div class="hero-image">
+                    <img src="images/chicken.jpg" alt="Poulet croustillant Foody">
                 </div>
-                <p class="prix"> 3.000 FCFA</p>
             </div>
-            <div class="card">
-                <img src="images/cheesse burger.jpg" alt="" width="100px">
-                <h3>Cheese burger</h3>
-                <div class="icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="prix"> 4.000 FCFA</p>
-            </div>
-            <div class="card">
-                <img src="images/chicken.jpg" alt="" width="100px">
-                <h3>Chicken</h3>
-                <div class="icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p class="prix"> 3.500 FCFA</p>
-            </div>
-        </div>
-        <a href="menu.html">Voir le menu complet</a>
-    </section>
-          
-    <section class="temoignages">
-        <h2>Avis des clients</h2>
-        <p> Ce que nos clients pensent de Foody</p>
-        <div class="contenu">
-           <div class="avis">
-                <div class="icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p> « Les burgers sont délicieux et bien garnis.<br>Je recommande vivement Foody ! »</p>
-                <h3>&mdash; Eva Swish</h3>
-            </div>
-            <div class="avis">
-                <div class="icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>« Très bon ! Les portions sont généreuses et le rapport qualité-prix est excellent. »</p>
-                <h3>&mdash; Charles L</h3>
-            </div>
-            <div class="avis">
-                <div class="icons">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-regular fa-star"></i>
-                </div>
-                <p>« Livraison rapide et repas encore chaud.Une très bonne expérience ! »</p>
-                <h3>&mdash; Aminata N</h3>
-            </div>
-       </div>
-    </section>
+        </section>
+        
+        <section class="categories" aria-label="Catégories du menu">
+            <a class="category selected" href="menu.html">
+                <span class="category-img">
+                    <img src="images/burger.jpg" alt="">
+                </span>
+                <b>Tout voir</b>
+            </a>
+            <a class="category" href="menu.html">
+                <span class="category-img">
+                    <img src="images/chicken-wings.jpg" alt="">
+                </span>
+                <b>Burgers</b>
+            </a>
+            <a class="category" href="menu.html">
+                <span class="category-img">
+                    <img src="images/chicken.jpg" alt="">
+                </span>
+                <b>Poulet</b>
+            </a>
+            <a class="category" href="menu.html">
+                <span class="category-img">
+                    <img src="images/tacos.jpg" alt="">
+                </span>
+                <b>Tacos</b>
+            </a>
+            <a class="category" href="menu.html">
+                <span class="category-img">
+                    <img src="images/pizza1.jpg" alt="">
+                </span>
+                <b>Pizzas</b>
+            </a>
+            <a class="category" href="menu.html">
+                <span class="category-img">
+                    <img src="images/jus-naturel.jpg" alt="">
+                </span>
+                <b>Boissons</b>
+            </a>
+        </section>
 
-    <section id="abonnement" class="abonnement">
-        <h1>Inscrivez-vous a notre NewsLetter</h1>
-        <form action="abonnement.php">
-            <input type="email" name="email" id="email" placeholder="Votre adresse email">
-            <button>S'abonner</button>
-        </form>
-    </section>
+        <section class="about" id="apropos">
+            <div class="about-image">
+                <img src="images/pizza1.jpg" alt="Pizza fraîchement préparée chez Foody">
+                <div class="about-sticker">
+                    <i class="fa-solid fa-star"></i>
+                    <span>Le goût<br>avant tout</span>
+                </div>
+            </div>
+            <div class="about-copy">
+                <p class="eyebrow">Bienvenue chez Foody</p>
+                <h2>Bien plus qu'un repas, un moment de <em>plaisir.</em></h2>
+                <p>Chez Foody, nous préparons des recettes généreuses avec des produits soigneusement sélectionnés.
+                   Notre mission : vous offrir une cuisine savoureuse, rapide et accessible, à chaque commande.</p>
+                <div class="about-points">
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        Des ingrédients frais
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-check"></i> 
+                        Des portions généreuses
+                    </span>
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        Une équipe passionnée
+                    </span>
+                </div>
+                <a class="text-link" href="apropos.html">
+                    En savoir plus 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+        <section class="popular" id="menu">
+            <div class="popular-section">
+                <div>
+                    <p class="intro">Les indispensables Foody</p>
+                    <h2>Les plus <em>aimés</em></h2>
+                </div>
+                <a href="menu.html" class="text-link">
+                    Voir tout le menu 
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="products">
+                <article class="product-card">
+                    <button class="heart" aria-label="Ajouter aux favoris">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+
+                    <div class="product-image">
+                        <img src="images/burger.jpg" alt="Double Cheese Burger">
+                    </div>
+
+                    <div class="product-body">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i> 
+                                4,8
+                            <span>
+                               (120 avis)
+                            </span>
+                        </div>
+                        <h3>Double Cheese Burger</h3>
+                        <p>Double steak, cheddar fondant, sauce maison.</p>
+                       
+                        <div class="product-bottom">
+                            <strong>
+                                4 000 
+                                <small>
+                                    FCFA
+                                </small>
+                            </strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <button class="heart" aria-label="Ajouter aux favoris">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <div class="product-image">
+                        <img src="images/chicken.jpg" alt="Chicken Crispy">
+                    </div>
+                    <div class="product-body">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i>
+                                4,9 
+                            <span>
+                                (96 avis)
+                            </span>
+                        </div>
+                        <h3>Chicken Crispy</h3>
+                        <p>Poulet croustillant, frites et sauce épicée.</p>
+                        <div class="product-bottom">
+                            <strong>
+                                3 500 
+                                <small>FCFA</small>
+                            </strong>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="product-card">
+                    <button class="heart" aria-label="Ajouter aux favoris">
+                        <i class="fa-regular fa-heart"></i>
+                    </button>
+                    <div class="product-image">
+                        <img src="images/tacos.jpg" alt="Tacos gourmand">
+                    </div>
+                    <div class="product-body">
+                        <div class="rating">
+                            <i class="fa-solid fa-star"></i> 
+                              4,7 
+                            <span>
+                                (84 avis)
+                            </span>
+                        </div>
+                        <h3>Tacos gourmand</h3>
+                        <p>Viande marinée, frites, fromage et sauce.</p>
+                        <div class="product-bottom">
+                            <strong>
+                                2 500 
+                                <small>FCFA</small>
+                            </strong>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="promotion" id="apropos">
+            <div class="promotion-header">
+                <p class="intro">Offre du moment</p>
+                <h2>Un festin à partager, <em>sans se priver.</em></h2>
+                <p>Profitez de -20 % sur les menus à deux, tous les mercredis.</p>
+                <a href="menu.html" class="button button-primary">
+                    J'en profite 
+                </a>
+            </div>
+            <div class="reduction">
+                <span class="offre">
+                    -20%
+                    <small>OFF</small>
+                </span>
+                <img src="images/frites.jpg" alt="Frites dorées Foody">
+            </div>
+        </section>
+   
+        <section class="services">
+            <article>
+                <i class="fa-solid fa-burger"></i>
+                <div>
+                    <h3>Fraîchement préparé</h3>
+                    <p>Chaque commande est réalisée à la demande.</p>
+                </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-motorcycle"></i>
+                <div>
+                    <h3>Livraison express</h3>
+                    <p>Votre repas arrive chaud, sans attendre.</p>
+                </div>
+            </article>
+            <article>
+                <i class="fa-solid fa-heart"></i>
+                <div>
+                    <h3>Le goût avant tout</h3>
+                    <p>Des recettes généreuses qui font plaisir.</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="temoignages">
+            <h2>Avis des clients</h2>
+            <p> Ce que nos clients pensent de Foody</p>
+            <div class="contenu">
+                <div class="avis">
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p> « Les burgers sont délicieux et bien garnis.<br>Je recommande vivement Foody ! »</p>
+                    <h3>&mdash; Eva Swish</h3>
+                </div>
+                <div class="avis">
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>« Très bon ! Les portions sont généreuses et le rapport qualité-prix est excellent. »</p>
+                    <h3>&mdash; Charles L</h3>
+                </div>
+                <div class="avis">
+                    <div class="icons">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <p>« Livraison rapide et repas encore chaud.Une très bonne expérience ! »</p>
+                    <h3>&mdash; Aminata N</h3>
+                </div>
+           </div>
+        </section>
+
+        <section id="abonnement" class="abonnement">
+            <div class="contenu">
+                <h2>Inscrivez-vous a notre NewsLetter</h2>
+                <form>
+                    <input type="email" name="email" id="email" placeholder="Votre adresse email">
+                    <button>S'abonner</button>
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="colums_iomportant">
@@ -190,17 +363,6 @@
             <p>Tiktok</p>
         </div>
     </footer>
-
-    <script>
-        function mobile(){
-            var x = document.getElementById('nav');
-            if(x.className === 'nav'){
-                x.className += ' responsive';
-            }else{
-                x.className = 'nav';
-            }
-        }
-    </script>
-
+    <script src="script.js"></script>
 </body>
 </html>

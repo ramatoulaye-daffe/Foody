@@ -9,175 +9,182 @@
 </head>
 <body>
 
-    <header>
-        <!-- Bouton hamburger -->
-        <button class="menu-toggle" id="menu-toggle" onclick="mobile()">
+    <header class="topbar">
+        <a href="#accueil" class="logo"><span>F</span>oody.</a>
+        <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <nav id="nav" class="nav">
-            <h1><span>F</span>OODY</h1>
-            <ul>
-                <a href="index.html"><li>Accueil</li></a>
-                <a href="apropos.html"><li>A propos</li></a>
-                <a href="menu.html"><li>Menu</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-                <button>S'inscrire</button>
-            </ul>
+        <nav class="navigation" aria-label="Navigation principale">
+            <a class="active" href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="actions">
+            <button class="icon-button" aria-label="Rechercher">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a class="order-link" href="#">
+                Commander 
+            </a>
+       </div>
     </header>
 
-    <section class="menu-header"></section>
+    <main>
+        <section class="menu-hero">
+            <p class="eyebrow">Un maximum de plaisir</p>
+            <h1>Notre menu</h1>
+            <p>Des saveurs qui font plaisir, préparées au moment de votre commande.</p>
+        </section>
 
-    <section class="titre">
-        <div class="info">
-            <h1>Découvrez notre menu</h1>
-        </div>
-    </section>
+        <section class="carte-menu">
+            <div class="categories">
+                <button class="category-btn active" data-category="tous">Tous</button>
+                <button class="category-btn" data-category="burger">Burgers</button>
+                <button class="category-btn" data-category="pizza">Pizzas</button>
+                <button class="category-btn" data-category="poulet">Poulet</button>
+                <button class="category-btn" data-category="accompagnement">Accompagnements</button>
+                <button class="category-btn" data-category="boisson">Boissons</button>
+            </div>
 
-    <section class="carte-menu">
-        <div class="menu-title">
-            <h2>Nos plats populaires</h2>
-            <p>
-                Des plats savoureux préparés avec des ingrédients de qualité
-                pour satisfaire toutes vos envies.
-            </p>
-        </div> 
-
-        <!-- Catégories -->
-        <div class="categories">
-            <button class="category-btn active" data-category="tous">Tous</button>
-            <button class="category-btn" data-category="burger">Burgers</button>
-            <button class="category-btn" data-category="pizza">Pizzas</button>
-            <button class="category-btn" data-category="poulet">Poulet</button>
-            <button class="category-btn" data-category="accompagnement">Accompagnements</button>
-            <button class="category-btn" data-category="boisson">Boissons</button>
-        </div>
-
-         <!-- Cartes produits -->
-        <div class="menu-container">
-            <!-- burger -->
-            <div class="menu-card" data-category="burger">
-                <img src="images/burger.jpg" alt="Foody Burger">
-                <div class="card-content">
-                    <div class="card-title">
-                        <h3>Foody Burger</h3>
-                        <strong>3 500 FCFA</strong>
+            <div class="menu-container">
+                <!-- burger -->
+                <div class="menu-card" data-category="burger">
+                    <img src="images/burger.jpg" alt="Foody Burger">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h3>Foody Burger</h3>
+                            <strong>3 500 FCFA</strong>
+                        </div>
+                        <p>
+                            Burger savoureux avec steak, fromage,
+                            salade et sauce maison.
+                        </p>
+                        <button class="btn">Commander</button>
                     </div>
-                    <p>
-                        Burger savoureux avec steak, fromage,
-                        salade et sauce maison.
-                    </p>
-                    <button class="btn">Commander</button>
                 </div>
-            </div>
-            <!-- Chicken burger -->
-            <div class="menu-card" data-category="burger">
-                <img src="images/chicken-burger.jpg" alt="Chicken Burger">
-                <div class="card-content">
-                    <div class="card-title">
-                        <h3>Chicken Burger</h3>
-                        <strong>3 000 FCFA</strong>
+
+                <!-- Chicken burger -->
+                <div class="menu-card" data-category="burger">
+                    <img src="images/chicken-burger.jpg" alt="Chicken Burger">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h3>Chicken Burger</h3>
+                            <strong>3 000 FCFA</strong>
+                        </div>
+                        <p>
+                            Poulet croustillant, salade fraîche
+                            et sauce spéciale Foody.
+                        </p>
+                        <button class="btn">Commander</button>
                     </div>
-                    <p>
-                        Poulet croustillant, salade fraîche
-                        et sauce spéciale Foody.
-                    </p>
-                    <button class="btn">Commander</button>
                 </div>
-            </div>
 
-            <!-- Pizza -->
-            <div class="menu-card" data-category="pizza">
-                <img src="images/pizza-poulet.jpg" alt="Pizza Poulet">
-                <div class="card-content">
-                    <div class="card-title">
-                        <h3>Pizza Poulet</h3>
-                        <strong>4 500 FCFA</strong>
+                <!-- Pizza -->
+                <div class="menu-card" data-category="pizza">
+                    <img src="images/pizza-poulet.jpg" alt="Pizza Poulet">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h3>Pizza Poulet</h3>
+                            <strong>4 500 FCFA</strong>
+                        </div>
+                        <p>
+                            Pizza généreuse au poulet,
+                            fromage et sauce tomate.
+                        </p>
+                        <button class="btn"> Commander</button>
                     </div>
-                    <p>
-                        Pizza généreuse au poulet,
-                        fromage et sauce tomate.
-                    </p>
-                    <button class="btn"> Commander</button>
                 </div>
-            </div>
 
-
-            <!-- Chicken Wings -->
-            <div class="menu-card" data-category="poulet">
-                <img src="images/chicken-wings.jpg" alt="Chicken Wings">
-                <div class="card-content">
-                    <div class="card-title">
-                        <h3>Chicken Wings</h3>
-                        <strong>3 000 FCFA</strong>
+                <!-- Chicken Wings -->
+                <div class="menu-card" data-category="poulet">
+                    <img src="images/chicken-wings.jpg" alt="Chicken Wings">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h3>Chicken Wings</h3>
+                            <strong>3 000 FCFA</strong>
+                        </div>
+                        <p>
+                            Ailes de poulet croustillantes
+                            accompagnées de notre sauce maison.
+                        </p>
+                        <button class="btn">Commander</button>
                     </div>
-                    <p>
-                        Ailes de poulet croustillantes
-                        accompagnées de notre sauce maison.
-                    </p>
-                    <button class="btn">Commander</button>
                 </div>
-            </div>
 
-            <!-- Frites -->
-            <div class="menu-card" data-category="accompagnement">
-                <img src="images/frites.jpg" alt="Frites">
-                <div class="card-content">
-                    <div class="card-title">
-                        <h3>Frites</h3>
-                        <strong>1 500 FCFA</strong>
+                <!-- Frites -->
+                <div class="menu-card" data-category="accompagnement">
+                    <img src="images/frites.jpg" alt="Frites">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h3>Frites</h3>
+                            <strong>1 500 FCFA</strong>
+                        </div>
+                        <p>
+                            Frites croustillantes et dorées,
+                            parfaites pour accompagner votre repas.
+                        </p>
+                        <button class="btn">Commander</button>
                     </div>
-                    <p>
-                        Frites croustillantes et dorées,
-                        parfaites pour accompagner votre repas.
-                    </p>
-                    <button class="btn">Commander</button>
                 </div>
-            </div>
 
-            <!-- Jus -->
-            <div class="menu-card"  data-category="boisson">
-                <img src="images/jus-naturel.jpg" alt="Jus naturel">
-                <div class="card-content">
-                    <div class="card-title">
-                        <h3>Jus naturel</h3>
-                        <strong>1 500 FCFA</strong>
+                <!-- Jus -->
+                <div class="menu-card"  data-category="boisson">
+                    <img src="images/jus-naturel.jpg" alt="Jus naturel">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <h3>Jus naturel</h3>
+                            <strong>1 500 FCFA</strong>
+                        </div>
+                        <p>
+                            Jus naturel frais et savoureux
+                            pour accompagner votre repas.
+                        </p>
+                        <button class="btn">Commander</button>
                     </div>
-                    <p>
-                        Jus naturel frais et savoureux
-                        pour accompagner votre repas.
-                    </p>
-                    <button class="btn">Commander</button>
-                </div>
 
-            </div>
-        </div>
-    </section>
-
-    <section class="aide">
-        <div class="aide-content">
-            <div class="aide-icon">
-                <i class="fa-solid fa-headset"></i>
-            </div>
-            <div class="aide-text">
-                <h2>Besoin d'aide ?</h2>
-                <p>Une question sur votre commande ?</p>
-                <div class="aide-contact">
-                    <span>
-                        <i class="fa-solid fa-phone"></i>
-                        +221 33 800 04 04
-                    </span>
-                    <span>
-                        <i class="fa-brands fa-whatsapp"></i>
-                        WhatsApp
-                    </span>
                 </div>
             </div>
-            <a href="contact.html" class="aide-btn">
-                Nous contacter
-            </a>
-        </div>
-    </section>
+        </section>
+
+        <section class="aide">
+            <div class="aide-content">
+                <div class="aide-icon">
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="aide-text">
+                    <h2>Besoin d'aide ?</h2>
+                    <p>Une question sur votre commande ?</p>
+                    <div class="aide-contact">
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                            +221 33 800 04 04
+                        </span>
+                        <span>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            WhatsApp
+                        </span>
+                    </div>
+                </div>
+                <a href="contact.html" class="aide-btn">
+                    Nous contacter
+                </a>
+            </div>
+        </section>
+
+        <section class="menu-banner">
+            <div>
+                <p class="eyebrow">Menu duo</p>
+                <h2>À deux, c'est encore meilleur.</h2>
+                <p>Deux burgers, deux boissons et deux portions de frites à prix doux.</p>
+                <a href="#plats" class="button button-primary">
+                    Choisir le menu duo
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <img src="images/frites.jpg" alt="Frites Foody">
+        </section>
+    </main>
 
     <footer>
         <div class="colums_iomportant">
@@ -206,48 +213,7 @@
         </div>
     </footer>
 
-    <script>
-        function mobile(){
-            var x = document.getElementById('nav');
-            if(x.className === 'nav'){
-                x.className += ' responsive';
-            }else{
-                x.className = 'nav';
-            }
-        }
-    
-        const categoryButtons = document.querySelectorAll(".category-btn");
-        const menuCards = document.querySelectorAll(".menu-card");
-
-        categoryButtons.forEach(button => {
-            button.addEventListener("click", () => {
-
-                // Récupérer la catégorie choisie
-                const category = button.dataset.category;
-
-                // Modifier le bouton actif
-                categoryButtons.forEach(btn => {
-                    btn.classList.remove("active");
-                });
-
-                button.classList.add("active");
-
-                // Afficher les bons produits
-                menuCards.forEach(card => {
-
-                    const cardCategory = card.dataset.category;
-
-                    if (category === "tous" || cardCategory === category) {
-                        card.style.display = "block";
-                    } else {
-                        card.style.display = "none";
-                    }
-
-                });
-
-            });
-        });
-    </script>
+    <script src="script.js"></script>
 
 </body>
 </html>

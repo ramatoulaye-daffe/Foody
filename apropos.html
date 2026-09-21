@@ -3,172 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A propos</title>
+    <title>Foody — À propos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
 </head>
 <body>
-    
-    <header>
-        <!-- Bouton hamburger -->
-        <button class="menu-toggle" id="menu-toggle" onclick="mobile()">
+
+    <header class="topbar">
+        <a href="#accueil" class="logo"><span>F</span>oody.</a>
+        <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <nav id="nav" class="nav">
-            <h1><span>F</span>OODY</h1>
-            <ul>
-                <a href="index.html"><li>Accueil</li></a>
-                <a href="apropos.html"><li>A propos</li></a>
-                <a href="menu.html"><li>Menu</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-                <button>S'inscrire</button>
-            </ul>
+        <nav class="navigation" aria-label="Navigation principale">
+            <a class="active" href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="actions">
+            <button class="icon-button" aria-label="Rechercher">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a class="order-link" href="commande.html">
+                Commander 
+            </a>
+       </div>
     </header>
 
-    <section class="apropos-header"></section>
-
-    <section id="apropos">
-        <div class="titre-apropos">
-            <h2>À PROPOS DE FOODY</h2>
-            <p>Découvrez qui nous sommes,notre histoire et ce qui nous passionne.</p>
-        </div>
-        <div class="apropos">
-            <div class="left">
-            <h1>Notre histoire</h1>
-            <p class="desc">
-                <span>Foody</span> est né d'une idée simple : créer un espace où chacun peut profiter de plats <span>savoureux, généreux et accessibles</span>, sans compromis sur la qualité.
-                Depuis ses débuts, Foody s'est donné pour mission de proposer une nouvelle façon de vivre le fast-food,
-                en associant <span>rapidité, fraîcheur et plaisir</span>.<br><br>
-                Notre équipe travaille chaque jour avec passion pour préparer des recettes qui répondent aux goûts et aux envies de nos clients.
-                Au fil du temps, Foody a grandi grâce à la confiance et à la fidélité de sa clientèle.<br>
-                Aujourd'hui, nous continuons à développer notre offre et nos services, notamment avec la commande à emporter, la livraison et la commande en ligne, 
-                afin de rendre nos plats encore plus accessibles.<br><br>
-                Notre ambition est de faire de chaque commande un moment de plaisir, tout en construisant une relation durable avec nos clients.<br>
-                <span>Foody</span>, une histoire de passion, de goût et de partage.
-            </p>
-            <a href="">Réservez votre table</a>
-            </div>
-            <div class="right">
-                <img src="images/chef.jpg" alt="Chef" width="300px">
-            </div>
-        </div>
-    </section>
-
-    <section id="apropos">
-        <div class="apropos">
-            <div class="left">
-               <img src="images/a-propos.jpg" alt="services" width="400px">
-            </div>
-            <div class="right">
-                <h1>Nos services</h1>
-                <p class="desc">
-                Nous vous proposons :<br><br>
-                    Service sur place dans une ambiance chaleureuse.<br>
-                    Livraison à domicile pour recevoir vos plats directement chez vous.<br>
-                    Commande à emporter pour manger où vous voulez.<br>
-                    Commande en ligne simple et rapide.<br>
-                    Réservation de tables pour vos repas en famille ou entre amis.<br>
-                    Commandes pour événements et repas de groupe.<br>
-                Notre objectif est de vous offrir un service rapide, 
-                des plats savoureux et une expérience agréable à chaque commande.<br><br>
-                <span>Foody</span> — Le goût qui vous fait revenir !  
+    <main>
+    
+        <section class="about-hero">
+            <div>
+                <p class="eyebrow">À propos de Foody</p>
+                <h1>
+                    Le bonheur se cuisine <em>chaque jour.</em>
+                </h1>
+                <p>
+                    Foody, c'est une cuisine généreuse,
+                    une équipe passionnée et surtout le plaisir de vous faire plaisir.
                 </p>
-                <a href="menu.html">Voir menu</a>
             </div>
-       </div>
-    </section>
+        </section>
 
-    <section class="team">
-        <div class="team-header">
-            <p>NOTRE ÉQUIPE</p>
-            <h2>Une équipe passionnée à votre service</h2>
-            <span>
-                Derrière chaque plat se trouve une équipe
-                passionnée qui travaille chaque jour pour vous offrir
-                une expérience gourmande et de qualité.
-            </span>
-        </div>
+        <section class="story">
+            <div class="story-image">
+                <img
+                    src="images/chicken-burger.jpg"
+                    alt="Un burger Foody fraîchement préparée"
+                >
+                <span>
+                    <strong>
+                        Depuis<br>2020
+                    </strong>
+                </span>
+            </div>
 
-        <div class="team-container">
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="images/fondatrice.jpg" alt="Responsable Foody">
-                </div>
-                <div class="team-content">
-                    <h3>Eva</h3>
-                    <p>Fondatrice & Gérante</p>
-                    <div class="team-socials">
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-linkedin-in"></i>
-                        </a>
+            <div class="story-copy">
+                <p class="eyebrow">L'esprit Foody</p>
+                <h2>
+                    Une cuisine qui fait <em>plaisir.</em>
+                </h2>
+                <p>
+                    Nous croyons qu'un bon repas doit être simple, savoureux
+                    et accessible. C'est pourquoi chaque recette Foody est
+                    pensée avec soin, des ingrédients sélectionnés jusqu'à
+                    la dernière touche de sauce.
+                </p>
+                <p>
+                    Que ce soit pour une pause déjeuner, un dîner en famille
+                    ou une commande entre amis, notre équipe vous prépare
+                    un moment gourmand à partager.
+                </p>
+                <a class="button button-primary" href="contact.html">
+                    Contactez-nous
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+        </section>
+
+         <section class="story">
+            <div class="story-copy">
+                <p class="eyebrow">Notre histoire</p>
+                <h2>
+                    Une passion devenue une aventure <em>gourmande</em>.
+                </h2>
+                <p>
+                    Foody est né d'une idée simple : rassembler les gens autour d'une cuisine généreuse, savoureuse et accessible.
+                    Depuis nos débuts en 2020, nous avons grandi avec une ambition claire : proposer des plats préparés avec soin, 
+                    dans un esprit de qualité, de partage et de convivialité.
+                    Chaque recette est pensée pour offrir une expérience gourmande, que vous soyez seul, 
+                    en famille ou entre amis.
+                    Au fil des années, la confiance de nos clients nous a permis de faire évoluer 
+                    Foody tout en conservant ce qui fait notre identité : des produits soigneusement sélectionnés, 
+                    des recettes généreuses et une équipe passionnée.
+                </p>
+                <p>
+                    Aujourd'hui, Foody continue son aventure avec la même envie : 
+                    vous faire découvrir de nouvelles saveurs et transformer chaque repas en un agréable moment de plaisir.
+                    Foody, une histoire qui continue…
+                    Chaque commande, chaque sourire et chaque moment partagé nous encouragent à aller plus loin. 
+                    Notre histoire s'écrit avec vous, jour après jour, autour d'une même passion : 
+                    la bonne cuisine.
+                </p>
+                <a class="button button-primary" href="menu.html">
+                    Découvrir le menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="story-image">
+                <img
+                    src="images/pizza1.jpg"
+                    alt="Une pizza Foody fraîchement préparée"
+                >
+                <span>
+                    <strong>
+                        Depuis<br>2020
+                    </strong>
+                </span>
+            </div>
+        </section>
+
+        <section class="values">
+            <div class="values-title">
+                <p class="eyebrow">Nos engagements</p>
+                <h2>
+                    Ce qui fait la différence <em>Foody.</em>
+                </h2>
+            </div>
+
+            <div class="value-grid">
+                <article>
+                    <i class="fa-solid fa-leaf"></i>
+                    <h3>La fraîcheur</h3>
+                    <p>
+                        Des ingrédients choisis avec soin pour des plats
+                        toujours savoureux.
+                    </p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-utensils"></i>
+                    <h3>La générosité</h3>
+                    <p>
+                        Des portions qui régalent et des recettes faites
+                        pour le partage.
+                    </p>
+                </article>
+
+                <article>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h3>La convivialité</h3>
+                    <p>
+                        Une équipe souriante et une expérience qui donne
+                        envie de revenir.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="team">
+            <div class="values-title">
+                <p class="eyebrow">
+                    Les visages de Foody
+                </p>
+                <h2>
+                    Une équipe <em>passionnée.</em>
+                </h2>
+                <p class="team-intro">
+                    Des personnes qui mettent leur savoir-faire et leur
+                    bonne humeur dans chaque commande.
+                </p>
+            </div>
+
+            <div class="team-grid">
+                <article class="team-card">
+                    <img
+                        src="images/chef cuisinier.jpg"
+                        alt="Moussa, chef cuisinier de Foody"
+                    >
+                    <div>
+                        <h3>
+                            Moussa N.
+                        </h3>
+                        <p>
+                            Chef cuisinier
+                        </p>
+
+                        <span>
+                            <a
+                                href="#"
+                                aria-label="Instagram de Moussa"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Facebook de Moussa"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </span>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="images/chef cuisinier.jpg" alt="Chef Foody">
-                </div>
-                <div class="team-content">
-                    <h3>Alex</h3>
-                    <p>Chef cuisinier</p>
-                    <div class="team-socials">
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
+                <article class="team-card">
+                    <img
+                        src="images/team2.jpg"
+                        alt="Aïssatou, serveuse chez Foody"
+                    >
+                    <div>
+                        <h3>
+                            Aïssatou D.
+                        </h3>
+                        <p>
+                            Serveuse de table
+                        </p>
+                        <span>
+                            <a
+                                href="#"
+                                aria-label="Instagram d'Aïssatou"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Facebook d'Aïssatou"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </span>
                     </div>
-                </div>
-            </div>
+                </article>
 
-            <div class="team-card">
-                <div class="team-image">
-                    <img src="images/responsable.jpg" alt="Responsable service Foody">
-                </div>
-                <div class="team-content">
-                    <h3>Awa</h3>
-                    <p>Responsable service client</p>
-                    <div class="team-socials">
-                        <a href="#">
-                            <i class="fa-brands fa-facebook-f"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="#">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
+                <article class="team-card">
+                    <img
+                        src="images/team1.jpg"
+                        alt="Fatou, Cuisinière chez Foody"
+                    >
+                    <div>
+                        <h3>
+                            Fatou B.
+                        </h3>
+                        <p>
+                            Cuisinière
+                        </p>
+                        <span>
+                            <a
+                                href="#"
+                                aria-label="Instagram de Fatou"
+                            >
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Facebook de Fatou"
+                            >
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                        </span>
                     </div>
-                </div>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
+        <section class="numbers">
+            <article>
+                <strong>
+                    2 500<span>+</span>
+                </strong>
+                <p>Clients satisfaits</p>
+            </article>
+
+            <article>
+                <strong>12</strong>
+                <p>Recettes gourmandes</p>
+            </article>
+
+            <article>
+                <strong>
+                    4,9<span>/5</span>
+                </strong>
+                <p>Note moyenne</p>
+            </article>
+
+            <article>
+                <strong>
+                    100<span>%</span>
+                </strong>
+                <p>Passion</p>
+            </article>
+        </section>
+        
+        <section class="about-cta">
+            <p class="eyebrow">
+                Envie de vous régaler ?
+            </p>
+            <h2>
+                Votre prochaine pause gourmande commence ici.
+            </h2>
+            <a class="button button-primary" href="menu.html">
+                Commander maintenant
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </section>
+    </main>
+    
     <footer>
         <div class="colums_iomportant">
             <h3><span>F</span>OODY</h3>
             <p>Le goût qui vous fait revenir.</p>
             <p>&copy; Copyright Foody, 2026 | Tous droits reserves</p>
         </div>
+
         <div class="colums">
             <h3>Nos services</h3>
             <p>Boutiques</p>
             <p>Restaurants</p>
             <p>Livraison</p>
         </div>
+
         <div class="colums">
             <h3>Navigation</h3>
             <a href="index.html">Accueil</a>
@@ -176,6 +330,7 @@
             <a href="apropos.html">À propos</a>
             <a href="contact.html">Contact</a>
         </div>
+
         <div class="colums">
             <h3>Nos reseaux</h3>
             <p>Facebook</p>
@@ -183,15 +338,8 @@
             <p>Tiktok</p>
         </div>
     </footer>
-    <script>
-        function mobile(){
-            var x = document.getElementById('nav');
-            if(x.className === 'nav'){
-                x.className += ' responsive';
-            }else{
-                x.className = 'nav';
-            }
-        }
-    </script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>

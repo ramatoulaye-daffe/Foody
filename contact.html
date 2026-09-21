@@ -3,131 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Foody — Contact</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
 </head>
 <body>
     
-    <header>
-        <!-- Bouton hamburger -->
-        <button class="menu-toggle" id="menu-toggle" onclick="mobile()">
+    <header class="topbar">
+        <a href="#accueil" class="logo"><span>F</span>oody.</a>
+        <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <nav id="nav" class="nav">
-            <h1><span>F</span>OODY</h1>
-            <ul>
-                <a href="index.html"><li>Accueil</li></a>
-                <a href="apropos.html"><li>A propos</li></a>
-                <a href="menu.html"><li>Menu</li></a>
-                <a href="contact.html"><li>Contact</li></a>
-                <button>S'inscrire</button>
-            </ul>
+        <nav class="navigation" aria-label="Navigation principale">
+            <a class="active" href="index.html">Accueil</a>
+            <a href="apropos.html">À propos</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
         </nav>
+        <div class="actions">
+            <button class="icon-button" aria-label="Rechercher">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a class="order-link" href="#">
+                Commander 
+            </a>
+       </div>
     </header>
 
-    <section class="contact-header"></section>
-    
-    <section class="contact" id="contact">
-        <div class="contactheader">
-            <p>Contactez-nous</p>
-            <h2>Parlons de votre prochaine commande</h2>
-            <span>
-                Une question ? Une réservation ? Besoin d'informations ?
-                Écrivez-nous, nous sommes là pour vous.
-            </span>
-        </div>
-
-        <div class="contact-container">
-            <div class="contact-info">
-                <h2>Restons en contact</h2>
-                <p class="info-description">
-                    Retrouvez-nous ou contactez-nous pour toute
-                    question concernant nos produits et services.
-                </p>
-                <div class="info-card">
-                    <div class="info-icon">
-                       <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <div>
-                        <h3>Adresse</h3>
-                        <p>Dakar, Sénégal</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">
-                       <i class="fa-solid fa-phone"></i>
-                    </div>
-                    <div>
-                        <h3>Téléphone</h3>
-                        <p>+221 33 800 04 04</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fa-solid fa-envelope"></i>
-                    </div>
-                    <div>
-                        <h3>Email</h3>
-                        <p>contact@foody.sn</p>
-                    </div>
-                </div>
-                <div class="info-card">
-                    <div class="info-icon">
-                        <i class="fa-solid fa-clock"></i>
-                    </div>
-                    <div>
-                        <h3>Horaires</h3>
-                        <p>Lun - Dim : 10h00 - 23h00</p>
-                    </div>
-                </div>
-                <a href="#" class="whatsapp-button">
-                    <i class="fa-brands fa-whatsapp"></i>
-                    Nous écrire sur WhatsApp
-                </a>
+    <main>
+        <section class="contact" id="contact">
+            <div class="contactheader">
+                <p>Contactez-nous</p>
+                <h2>Parlons de votre prochaine commande</h2>
+                <span>
+                    Une question ? Une réservation ? Besoin d'informations ?
+                    Écrivez-nous, nous sommes là pour vous.
+                </span>
             </div>
 
-            <form action="" class="contact-form">
-                <h3>Envoyez-nous un message</h3>
-                <div class="input-group">
-                    <label for="name">Nom complet</label>
-                    <input type="text" placeholder="Votre nom et prenom" required>
-                    <label for="name">Telephone</label>
-                    <input type="text" placeholder="Votre numero">
-                    <label for="name">Email</label>
-                    <input type="email" placeholder="Votre email">
-                    <label for="name">Sujet</label>
-                    <input type="text" placeholder="Sujet de votre message">
-                    <label for="name">Message</label>
-                    <textarea name="" id="" placeholder="Écrivez votre message.." required rows="6"></textarea>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Restons en contact</h2>
+                    <p class="info-description">
+                        Retrouvez-nous ou contactez-nous pour toute
+                        question concernant nos produits et services.
+                    </p>
+                    <div class="info-card">
+                        <div class="info-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h3>Adresse</h3>
+                            <p>Dakar, Sénégal</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                        <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Téléphone</h3>
+                            <p>+221 33 800 04 04</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@foody.sn</p>
+                        </div>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h3>Horaires</h3>
+                            <p>Lun - Dim : 10h00 - 23h00</p>
+                        </div>
+                    </div>
                 </div>
-                <button type="submit" class="submit-button">
-                    Envoyer le message
-                </button>
-            </form>
 
-        </div>
-    </section>
+                <form action="" class="contact-form">
+                    <h3>Envoyez-nous un message</h3>
+                    <div class="input-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" placeholder="Votre nom et prenom" required>
+                        <label for="name">Telephone</label>
+                        <input type="text" placeholder="Votre numero">
+                        <label for="name">Email</label>
+                        <input type="email" placeholder="Votre email">
+                        <label for="name">Sujet</label>
+                        <input type="text" placeholder="Sujet de votre message">
+                        <label for="name">Message</label>
+                        <textarea name="" id="" placeholder="Écrivez votre message.." required rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="submit-button">
+                        Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </section>
 
-    <section class="localisation">
-        <div class="location-header">
-            <h2> RETROUVEZ-NOUS</h2>
-            <p>Dakar, Sénégal</p>
-        </div>
-        <div class="map">
-            <iframe
-                src="https://www.google.com/maps?q=Dakar,Sénégal&output=embed"
-                loading="lazy">
-            </iframe>
-        </div>
-    </section>
+        <section class="whtsApp-banner">
+            <div> 
+                <i class="fa-brands fa-whatsapp"></i>
+                <div>
+                    <p class="info">
+                        Réponse rapide
+                    </p>
+                    <h2>Commandez aussi sur WhatsApp.</h2>
+                    <p>Envoyez-nous simplement votre commande et nous nous occupons du reste.</p>
+                </div>
+            </div>
+            <a class="whatsapp-button" href="https://wa.me/221770000000">
+                Écrire sur WhatsApp 
+            </a>
+        </section>
 
-    <section class="invitation">
-        <h2>Une petite faim ?</h2>
-        <p>Découvrez notre menu et commandez vos plats préférés.</p>
-        <a href="menu.html">Voir le menu </a>
-    </section>
+        <section class="localisation">
+            <div class="location-header">
+                <h2> RETROUVEZ-NOUS</h2>
+                <p>Dakar, Sénégal</p>
+            </div>
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps?q=Dakar,Sénégal&output=embed"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="colums_iomportant">
@@ -135,12 +144,14 @@
             <p>Le goût qui vous fait revenir.</p>
             <p>&copy; Copyright Foody, 2026 | Tous droits reserves</p>
         </div>
+
         <div class="colums">
             <h3>Nos services</h3>
             <p>Boutiques</p>
             <p>Restaurants</p>
             <p>Livraison</p>
         </div>
+
         <div class="colums">
             <h3>Navigation</h3>
             <a href="index.html">Accueil</a>
@@ -148,6 +159,7 @@
             <a href="apropos.html">À propos</a>
             <a href="contact.html">Contact</a>
         </div>
+
         <div class="colums">
             <h3>Nos reseaux</h3>
             <p>Facebook</p>
@@ -155,15 +167,8 @@
             <p>Tiktok</p>
         </div>
     </footer>
-    <script>
-        function mobile(){
-            var x = document.getElementById('nav');
-            if(x.className === 'nav'){
-                x.className += ' responsive';
-            }else{
-                x.className = 'nav';
-            }
-        }
-    </script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
