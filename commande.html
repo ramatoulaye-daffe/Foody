@@ -24,35 +24,129 @@
             <button class="icon-button" aria-label="Rechercher">
                 <i class="fa-solid fa-magnifying-glass"></i>
             </button>
-            <a class="order-link" href="commande.html">
-                Commander 
+            <a class="order-link" href="menu.html">
+                Ajouter un plat
+                <i class="fa-solid fa-plus"></i>
             </a>
        </div>
     </header>
 
     <main>
-        <section class="aide">
-            <div class="aide-content">
-                <div class="aide-icon">
-                    <i class="fa-solid fa-headset"></i>
-                </div>
-                <div class="aide-text">
-                    <h2>Besoin d'aide ?</h2>
-                    <p>Une question sur votre commande ?</p>
-                    <div class="aide-contact">
-                        <span>
-                            <i class="fa-solid fa-phone"></i>
-                            +221 33 800 04 04
-                        </span>
-                        <span>
-                            <i class="fa-brands fa-whatsapp"></i>
-                            WhatsApp
-                        </span>
+        <section class="order-hero">
+            <p class="titre">Presque à table</p>
+            <h1>
+                Finalise ta <em>commande.</em>
+            </h1>
+            <p>
+                Quelques informations et ton repas arrive bientôt.
+            </p>
+        </section>
+
+        <section class="checkout">
+            <form class="checkout-form">
+                <div class="checkout-title">
+                    <span>1</span>
+                    <div>
+                        <h2>Vos informations</h2>
+                        <p>Pour préparer et livrer votre commande.</p>
                     </div>
                 </div>
-                <a href="contact.html" class="aide-btn">
-                    Nous contacter
-                </a>
+
+                <div class="info1">
+                    <label>Prénom et nom
+                        <input
+                            type="text"
+                            placeholder="Votre nom"
+                            required
+                        >
+                    </label>
+                    <label>Téléphone
+                        <input
+                            type="tel"
+                            placeholder="77 000 00 00"
+                            required
+                        >
+                    </label>
+                    <label>Adresse de livraison
+                        <input
+                            type="text"
+                            placeholder="Quartier, rue, repère"
+                            required
+                        >
+                    </label>
+                </div>
+
+                <div class="info2">
+                    <span>2</span>
+                    <div>
+                        <h2>Mode de réception</h2>
+                        <p>Choisissez comment recevoir votre repas.</p>
+                    </div>
+                </div>
+
+                <div class="delivery-options">
+                    <label class="delivery-option active">
+                        <input
+                            type="radio"
+                            name="delivery"
+                            value="1000"
+                            checked
+                        >
+                        <i class="fa-solid fa-motorcycle"></i>
+                        <span>
+                            <strong>Livraison</strong>
+                            <small>À votre adresse</small>
+                        </span>
+                        <b>1 000 FCFA</b>
+                    </label>
+
+                    <label class="delivery-option">
+                        <input
+                            type="radio"
+                            name="delivery"
+                            value="0"
+                        >
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        <span>
+                            <strong>À emporter</strong>
+                            <small>Prêt en 20 minutes</small>
+                        </span>
+                        <b>Gratuit</b>
+                    </label>
+                </div>
+            </form>
+
+            <div class="panier-box">
+                <h2>Votre panier</h2>
+                <div id="panier-produits"></div>
+                <p class="empty-cart" hidden>
+                    Votre panier est vide.
+                    <a href="menu.html">
+                        Voir le menu
+                    </a>
+                </p>
+
+                <div class="frais">
+                    <p>
+                        <span>Sous-total</span>
+                        <b data-subtotal>0 FCFA</b>
+                    </p>
+                    <p>
+                        <span>Livraison</span>
+                        <b data-delivery>1 000 FCFA</b>
+                    </p>
+                    <p class="prix-total">
+                        <span>Total</span>
+                        <strong data-total>1 000 FCFA</strong>
+                    </p>
+                </div>
+
+                <button
+                    class="confirm-order"
+                    type="button"
+                >
+                    Confirmer la commande
+                </button>
             </div>
         </section>
     </main>
